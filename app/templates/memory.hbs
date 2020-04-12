@@ -1,0 +1,54 @@
+<div class="layout-row flex">
+  <div class="flex-20"></div>
+  <div class="flex-60">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+        {{title.media size="lg" src="johnny_automatic_file_cabnet_drawers_2.svg"}}
+          {{#text.headline}}<b>Memory</b>{{/text.headline}}
+          {{#text.subhead}}<b>How is JEE different?</b>{{/text.subhead}}
+           <p>
+            How a candidate organizes memory in the mind can play a crucial role in the way it becomes available when needed. For example, consider the following table
+          </p>
+          <table border=1>
+            <thead>
+            <tr>
+              <th>
+                Key
+              </th>
+              <th>
+                Value
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Test</td>
+                <td>It is a question answer session used to evaluate how much the candidate understands</td>
+              </tr>
+              <tr>
+                <td>It is a question answer session used to evaluate how much the candidate understands</td>
+                <td>Test</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            The way memory is organized is usually like a sorting cabinet found in a post box. A certain group of related items are clubbed and put in some kind of a shelf which has <b><i>a key</i></b>. When the candidate comes across a key, the rest of the memory is usually retrieved. In the above table, if it is memorized from left to right, it is likely that the first row is remembered with the key <b>"test"</b> and when someone asks what is <b>"test"</b> the portion of text on the right side may be retrieved. <b><i>Would this be true for the second row?</i></b>
+          </p>
+          <p>
+            Traditionally, certain keys are usually taught, typically like the chapter/section headings, some keywords based on the practice problems solved happen naturally.
+          </p>
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions}}
+        <LinkTo @route="knowscenarios">{{#paper-button raised=true accent=true}}Knowledge and Situations{{/paper-button}}</LinkTo>&nbsp;
+        <LinkTo @route="memorycontinued">{{#paper-button raised=true accent=true}}Memory - Continued{{/paper-button}}</LinkTo>
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+  <div class="flex-20"></div>
+</div>
+
+
+{{outlet}}
+

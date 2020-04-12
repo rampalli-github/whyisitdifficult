@@ -1,0 +1,42 @@
+<div class="layout-row flex">
+  <div class="flex-20"></div>
+  <div class="flex-60">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+        {{title.media size="lg" src="richardtallent-Blue-Tag.svg"}}
+          {{#text.headline}}<b>Memory - Continued -2</b>{{/text.headline}}
+          {{#text.subhead}}<b>How is JEE different?</b>{{/text.subhead}}
+           <p>
+             One of the important ways to keep memory easily accessible is to exercise it regularly. Candidate should be able to retrieve various aspects of a concept by questioning self with different kinds of <b>keys/clues.</b>
+           </p>
+           <p>
+            For example, let us look at a portion of the syllabus of CBSE Class XII Mathematics.
+            <h6>Source: <a href="http://cbseacademic.nic.in/web_material/CurriculumMain20/SrSecondary/Mathematics.pdf" target="_blank">http://cbseacademic.nic.in/web_material/CurriculumMain20/SrSecondary/Mathematics.pdf</a></h6>
+            <span>
+              <b>Relations & Functions:</b> Ordered pairs.Cartesian product of sets.Number of elements in the Cartesian product of two finite sets.Cartesian product of the set of reals with itself (upto R x R x R).Definition of relation, pictorial diagrams,  domain,  co-domain  and  range  of  a  relation.  Function  as  a  special  type  of relation. Pictorial representation of a function, domain, co-domain and range of a function. Real valued functions, domain and range of these functions, constant, identity, polynomial, rational, modulus, signum,  exponential,  logarithmic  and  greatest  integer  functions,  with  their  graphs.  Sum, difference, product and quotients of functions.
+            </span>
+           </p>
+           <p>
+                         First step is to create a mind map of the concepts and how they are inter related. Next step is to question oneself in various ways meaning, the map has to be navigated from various starting points. For example, in the above portion, if the starting point is <b>domain</b>, then the entire map should be navigated from there with a series of questions like
+           </p>
+           <ul>
+             <li>What is domain?</li>
+             <li>What other concepts is it related to?</li>
+             <li>How do I know what is a domain of a function?</li>
+             <li>......</li>
+           </ul>
+           <b>As this questioning becomes regular and varied, the mind map will slowly adjust itself to a more flexible and easily queryable map</b>
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions}}
+        <LinkTo @route="memorycontinued-2">{{#paper-button raised=true accent=true}}Memory{{/paper-button}}</LinkTo>&nbsp;
+        <LinkTo @route="memorycontinued-3">{{#paper-button raised=true accent=true}}Memory - Continued - 3{{/paper-button}}</LinkTo>
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+  <div class="flex-20"></div>
+</div>
+
+
+{{outlet}}

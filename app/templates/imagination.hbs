@@ -1,0 +1,38 @@
+<div class="layout-row flex">
+  <div class="flex-20"></div>
+  <div class="flex-60">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+        {{title.media size="lg" src="publicdomainq-virtual_reality_headset.svg"}}
+          {{#text.headline}}<b>Imagination</b>{{/text.headline}}
+          {{#text.subhead}}<b>How is JEE different?</b>{{/text.subhead}}
+           <h3>
+            So is it just memory?
+          </h3>
+          <p>The next important aspect of the exam is the next important faculty of human brain, Imagination.</p>
+          <p>Imagination is a fantastic faculty, <b><i>Virtual Reality</i></b>. However, usually the laws of nature do not hold in imagination. So a person may be flying defying gravity, something may be moving faster than another thing which in reality would have been faster and so on.</p>
+          <p>But a candidate appearing for JEE is expected to have an imagination that is close to reality. So the laws are applicable and imaginary or hypothetical situations are also analysed expecting them to confirm to the laws of nature.</p>
+          <p>
+            For example, consider this question (no. 11 Physics Paper 1) from JEE Advances 2019,
+          </p>
+          <i>Let us consider a system of units in which mass and angular momentum are dimensionless. If length has dimension of L , which of the following statement(s) is/are correct?</i>
+          <ol>
+            <li>The dimension of linear momentum is L<sup>-1</sup></li>
+            <li>The dimension of energy is L<sup>-2</sup></li>
+            <li>The dimension of force is L<sup>-3</sup></li>
+            <li>The dimension of power is L<sup>-5</sup></li>
+          </ol>
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions}}
+        <LinkTo @route="memorycontinued-3">{{#paper-button raised=true accent=true}}Memory - Continued - 3{{/paper-button}}</LinkTo>&nbsp;
+        <LinkTo @route="suggestions">{{#paper-button raised=true accent=true}}Suggestions{{/paper-button}}</LinkTo>
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+  <div class="flex-20"></div>
+</div>
+
+
+{{outlet}}

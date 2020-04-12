@@ -1,0 +1,55 @@
+<div class="layout-row flex">
+  <div class="flex-20"></div>
+  <div class="flex-60">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+        {{title.media size="lg" src="richardtallent-Blue-Tag.svg"}}
+          {{#text.headline}}<b>Memory - Continued</b>{{/text.headline}}
+          {{#text.subhead}}<b>How is JEE different?</b>{{/text.subhead}}
+           <p>
+            One way to deal with this situation is to add lots of tags to the sorting boxes instead of just one or two keys.
+          </p>
+          <table border=1>
+            <thead>
+            <tr>
+              <th>
+                Key
+              </th>
+              <th>
+                Value
+              </th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Test</td>
+                <td>It is a question answer session used to evaluate how much the candidate understands</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            In the above table, apart from remembering <b>"test"</b> as the key for the content on right side, some important terms from the right side may also be tagged to the key, so instead of <b>"test"</b> if any word such as <b>"evaluate"</b> is come across, it might still retrieve this portion of information.
+          </p>
+          <p>
+            This makes it easy to retrieve those portions of information that are relevant but the usual key is not supplied. This kind of organization of knowledge is important for attempting JEE because the concept that needs to be applied in a particular case to find the answer would not be known by the usual <b>clues</b> but by indirect or different clues.
+          </p>
+          <table>
+            <tr>
+              <td><img src="GS-mindmap-icon.svg" height=100></td>
+              <td>One technique to organise information could be to use Mindmaps</td>
+            </tr>
+          </table>
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions}}
+        <LinkTo @route="memorycontinued">{{#paper-button raised=true accent=true}}Memory{{/paper-button}}</LinkTo>&nbsp;
+        <LinkTo @route="memorycontinued-2">{{#paper-button raised=true accent=true}}Memory - Continued - 2{{/paper-button}}</LinkTo>
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+  <div class="flex-20"></div>
+</div>
+
+
+{{outlet}}

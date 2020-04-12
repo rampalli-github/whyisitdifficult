@@ -1,0 +1,33 @@
+<div class="layout-row flex">
+  <div class="flex-20"></div>
+  <div class="flex-60">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+        {{title.media size="lg" src="publicdomainq-study.svg"}}
+          {{#text.headline}}<b>Chapters and Sections</b>{{/text.headline}}
+          {{#text.subhead}}<b>How is JEE different?</b>{{/text.subhead}}
+           <p>
+          The questions are formed by combining the concepts from any section or chapter. This makes it interestingly difficult because the clues that we usually used to have by the section or chapter are not enough. For example take a look at this question from 2018 paper1 Question 14  of Mathematics. </p>
+          <p><i>A farmer F1 has a land in the shape of a triangle with vertices at P(0, 0), Q(1, 1) and
+R(2, 0). From this land, a neighbouring farmer F2 takes away the region which lies
+between the side PQ and a curve of the form y = x<sup>n</sup>
+(n > 1). If the area of the region
+taken away by the farmer F2 is exactly 30% of the area of ∆PQR, then the value of n is </i>
+          </p>
+          <p>
+            It involves area of triange, co-ordinate geometry and integral calculus as concepts and the english to equation consists of more than a single step.
+          </p>
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions}}
+        <LinkTo @route="introjee">{{#paper-button raised=true accent=true}}Introduction - JEE{{/paper-button}}</LinkTo>&nbsp;
+        <LinkTo @route="knowscenarios">{{#paper-button raised=true accent=true}}Knowledge And Situations{{/paper-button}}</LinkTo>
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+  <div class="flex-20"></div>
+</div>
+
+
+{{outlet}}

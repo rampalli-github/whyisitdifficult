@@ -1,0 +1,37 @@
+<div class="layout-row flex">
+  <div class="flex-20"></div>
+  <div class="flex-60">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+        {{title.media size="lg" src="johnny_automatic_path_to_star.svg"}}
+          {{#text.headline}}<b>Suggestions</b>{{/text.headline}}
+          {{#text.subhead}}<b>How is JEE different?</b>{{/text.subhead}}
+           <h3>
+            Suggestions to help prepare for JEE.
+          </h3>
+          <p>For those who are in Class XI and Class XII specific to the syllabus preparation is important. For those who are younger but aspire to prepare for JEE, inculcating the approach would be of more importance.</p>
+          <ul>
+            <li>Memory: Important to look at understanding as a whole and not as chapters and sections. Find ways to create mind maps to look at knowledge as one with various relationships in the concepts.</li>
+            <li>Imagination: It is important that the imagination needs to follow the laws of nature.
+              <p>One interesting way to build this would be to imagine various kinds of problems that can be created from one problem that the candidate may be solving at any point in time.</p>
+              <p> For example, let us look at this question from CBSE Class XII Mathematics paper 2019, (Q2)
+                <i>if f(x)=x+7 and g(x)=x-7, x &isin; R, then find d/dx (fog)(x)</i>
+              </p>
+              <p>The candidate can solve this question in couple of steps. Now one can imagine what other possibilties could be there for this question. For example, what if we had to find the derivative of (gof)(x) instead of (fog)(x). How would the answer vary? What if the functions were quadratic equations? .... Possibilities are many, these possibilities are not coming randomly but from a specific situation described, there is a certain base to start the imagination on. Similarly, many possibilities can be explored for almost every question that we try to solve during preparation. This exploration in turn helps readjust the mind map of the memory.</p>
+            </li>
+          </ul>
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions}}
+        <LinkTo @route="imagination">{{#paper-button raised=true accent=true}}Imagination{{/paper-button}}</LinkTo>
+        &nbsp;
+        <LinkTo @route="suggest-english">{{#paper-button raised=true accent=true}}Suggestion-Continued{{/paper-button}}</LinkTo>
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+  <div class="flex-20"></div>
+</div>
+
+
+{{outlet}}

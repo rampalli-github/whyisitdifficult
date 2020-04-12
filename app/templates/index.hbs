@@ -1,0 +1,27 @@
+<div class="layout-row flex">
+  <div class="flex-20"></div>
+  <div class="flex-60">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+        {{title.media size="lg" src="ktheads.svg"}}
+          {{#text.headline}}<b>What makes JEE (Advanced) difficult?</b>{{/text.headline}}
+          {{#text.subhead}}<b>Why does it need such a long preparation?</b>{{/text.subhead}}
+          <ul>
+            <li>Isn't it interesting that two papers of 3 hours duration each need years of preparation?</li>
+            <li>What is it that is needed in this long preparation?</li>
+            <li>Is it that we need to remember more information than what we need to remember for the regular boards?</li>
+            <li>Is it that we need to read and understand more text books than what we read for regular boards?</li>
+            <li>What should one do to prepare himself for this exam?</li>
+          </ul>
+          <b>All the very best to all the candidates. This is a personal observation of the difficulties in solving JEE (Advanced) question papers and the possible methodologies to deal with it. There are/may be many other methods.</b>
+            <i>Disclaimer: This has been prepared with the best intention to help students preparing for JEE, no claims are made in terms of accuracy or if it would work for anyone. </i>
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions}}
+        <LinkTo @route="introduction">{{#paper-button raised=true accent=true}}Interested in exploring these questions? Click here.{{/paper-button}}</LinkTo>
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+  <div class="flex-20"></div>
+</div>

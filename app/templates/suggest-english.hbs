@@ -1,0 +1,42 @@
+<div class="layout-row flex">
+  <div class="flex-20"></div>
+  <div class="flex-60">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+        {{title.media size="lg" src="johnny_automatic_path_to_star.svg"}}
+          {{#text.headline}}<b>Suggestions - Continued</b>{{/text.headline}}
+          {{#text.subhead}}<b>How is JEE different?</b>{{/text.subhead}}
+           <h3>
+            Suggestions to help prepare for JEE.
+          </h3>
+              <p> For example, let us look at this question from CBSE Class XII Mathematics paper 2019, (Q2)
+                <i>if f(x)=x+7 and g(x)=x-7, x &isin; R, then find d/dx (fog)(x)</i>
+              </p>
+              <p>
+                Another way is to convert this into an english question. The reverse of <i>English to Equation</i>. Say you try to do something like this
+              </p>
+              <b><i>A factory has a machine that produces n items in a day where "n" is a variable. It is observed that regardless of the value of "n" seven items are always faulty. A dealer who takes the items from this factory, has a stock of these items, so he adds 7 items to whatever number of items he gets from this factory and makes a lot for selling. Find the rate at which the number of items in the lot is changing with respect to n</i></b>
+
+                <p> This may not be an accurate representation of the equation, but just to give an example of how you could construct a situation from the equation. From there on, you could look at various inputs that were given and create more equations to arrive at the input than giving them directly. These could come from concepts that are part of any other chapter or subject. <b>Given a situation with a certain number of inputs, we need to find some missing information by applying whatever we know of combining the inputs to calculate the missing values.</b></p>
+                <p>
+                  As an example, consider this question from Mathematics in 1997 JEE question paper. (Source: random search for 1997 question paper on google) <i>For each natural number k, let C<sub>k</sub> denote the cirlce with radius K centimeters and center at the origin. On the Circle C<sub>k</sub>, a particle moves K centimeters in the counter clockwise direction. After completing its motion on C<sub>k</sub> the particle moves to C<sub>k+1</sub> in the radial direction. The motion of the particle continues in this manner. The particle starts at (1,0). If the particle crosses the positive direction of the x-axis for the first time on the circle C<sub>n</sub> then n = ____</i>
+                </p>
+                <i><b>Hint: Use the definition of radian to solve this problem.</b></i>
+            <p><b>All the very best to all the candidates. This is a personal observation of the difficulties in solving JEE question papers and the possible methodologies to deal with it. There are other methods where students could solve many books with lots of problems and hope that the mind map is formed and the imagination is tuned appropriately. Or, work continuously being aware that you need to create a good mind map and have the capability to imagine situations that confirm to the laws of nature.</b>
+            <i>Disclaimer: This has been prepared with the best intention to help students preparing for JEE, no claims are made in terms of accuracy or if it would work for anyone. </i>
+            </p>
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions}}
+        <LinkTo @route="suggestions">{{#paper-button raised=true accent=true}}Suggestions{{/paper-button}}</LinkTo>
+        &nbsp;
+        <LinkTo @route="index">{{#paper-button raised=true accent=true}}Home{{/paper-button}}</LinkTo>
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+  <div class="flex-20"></div>
+</div>
+
+
+{{outlet}}

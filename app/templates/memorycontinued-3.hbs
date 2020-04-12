@@ -1,0 +1,29 @@
+<div class="layout-row flex">
+  <div class="flex-20"></div>
+  <div class="flex-60">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+        {{title.media size="lg" src="mathafix-barre-telechargement.svg"}}
+          {{#text.headline}}<b>Memory - Continued - 3</b>{{/text.headline}}
+          {{#text.subhead}}<b>How is JEE different?</b>{{/text.subhead}}
+           <h3>
+            So what is it about 2+ years of preparation?
+          </h3>
+          <p>The important thing is that the entire gamut of syllabus needs to be understood. The mind map needs to encompass the entire syllabus <b><i>(as much as possible, it is not that all questions will combine all possible topics/subjects)</i></b></p>
+          <p>The capability to solve a full past JEE question paper happens only after all the elements of syllabus are in some form understood. This usually happens somewhere towards the end of first half of class XII. However, how carefully each part is understood and assimilated into the mind map is crucially important to make the leap easily in the last few months.</p>
+          <p>For <i><b>Gestalt</b> (an organized whole that is perceived as more than the sum of its parts)</i> to happen, the perception of the individual parts also has to be deep. Each part that is learnt should be understood in various ways and open channels left for new relationships to be formed either with concepts already learnt or with new ones that are going to be learnt in future. The topics learnt early in the cycle may get the beating because they are not revised regularly. It is important that when milestones such as half yearly or class XI exams happen, these occasions are used to readjust and refresh the mindmap formed till then.
+  </p>
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions}}
+        <LinkTo @route="memorycontinued-2">{{#paper-button raised=true accent=true}}Memory - Continued - 2{{/paper-button}}</LinkTo>&nbsp;
+        <LinkTo @route="imagination">{{#paper-button raised=true accent=true}}Imagination{{/paper-button}}</LinkTo>
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+  <div class="flex-20"></div>
+</div>
+
+
+{{outlet}}

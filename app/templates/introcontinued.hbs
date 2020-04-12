@@ -1,0 +1,34 @@
+<div class="layout-row flex">
+  <div class="flex-20"></div>
+  <div class="flex-60">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+        {{title.media size="lg" src="publicdomainq-study.svg"}}
+          {{#text.headline}}<b>Introduction - Continued</b>{{/text.headline}}
+          {{#text.subhead}}<b>How are we taught? and How are we tested?</b>{{/text.subhead}}
+          <p>
+            <img src="odd-detective.svg" width="80">The questions that are asked in the board examination are either the ones that we have already solved earlier or follow the same pattern as we have solved earlier. This gives clues on how to approach the questions.
+          </p>
+          <p>
+            {{paper-icon "toggle_off" size=48}}{{paper-icon "toggle_on" size=48}} Choice: Normally the question papers have choice in them, so you could still make it if you skipped learning a certain portion of the syllabus.
+          </p>
+          <p>
+            <img src="jeronimo-dice-11.svg" width="80"> Normally multiple choice questions have only one correct answer, sometimes easier to choose the right one.
+            </p>
+            <p>
+              {{paper-icon "translate" size=48}} English to Equation translation is usually single step. For example, take this question in CBSE XII Board exam 2019 of mathematics - <i>If a line makes angles 90&deg;, 135&deg;, 45&deg; with the x, y and z axes respectively, find its direction cosines.</i>
+            </p>
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions}}
+        <LinkTo @route="introduction">{{#paper-button raised=true accent=true}}Introduction{{/paper-button}}</LinkTo>&nbsp;
+        <LinkTo @route="introjee">{{#paper-button raised=true accent=true}}Introduction - JEE{{/paper-button}}</LinkTo>
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+  <div class="flex-20"></div>
+</div>
+
+
+{{outlet}}

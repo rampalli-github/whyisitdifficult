@@ -1,0 +1,38 @@
+<div class="layout-row flex">
+  <div class="flex-20"></div>
+  <div class="flex-60">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+        {{title.media size="lg" src="publicdomainq-study.svg"}}
+          {{#text.headline}}<b>Introduction</b>{{/text.headline}}
+          {{#text.subhead}}<b>How are we taught? and How are we tested?</b>{{/text.subhead}}
+          <p>
+            The basic organisation of content in the text books is <b>Chapters</b> and <b>Sections</b> within <i>Chapters</i>.
+          </p>
+          <table>
+            <tr>
+              <td><img src="format-sort-123.svg" width="80"></td>
+              <td>These are arranged in a certain order. Each section explains a certain concept and usually is followed by a set of questions that test the understanding of that section.</td>
+            </tr>
+            <tr>
+              <td><img src="odd-detective.svg" width="80"></td>
+              <td>This gives a crucial clue that the questions are related to the section we just learnt.</td>
+            </tr>
+            <tr>
+              <td colspan="2">For Example: if a question is asked right now, how is the content organised in text books? we have a clue that we have to pick the answer from the content in this page as <b>Chapters</b> and <b>Sections</b> within <i>Chapters</i></td>
+            </tr>
+          </table>
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions}}
+        <LinkTo @route="index">{{#paper-button raised=true accent=true}}Home{{/paper-button}}</LinkTo>&nbsp;
+        <LinkTo @route="introcontinued">{{#paper-button raised=true accent=true}}Next{{/paper-button}}</LinkTo>
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+  <div class="flex-20"></div>
+</div>
+
+
+{{outlet}}

@@ -1,0 +1,28 @@
+<div class="layout-row flex">
+  <div class="flex-20"></div>
+  <div class="flex-60">
+    {{#paper-card as |card|}}
+      {{#card.title as |title|}}
+        {{#title.text as |text|}}
+        {{title.media size="lg" src="OSHA-danger5.svg"}}
+          {{#text.headline}}<b>Knowledge and Situations</b>{{/text.headline}}
+          {{#text.subhead}}<b>How is JEE different?</b>{{/text.subhead}}
+           <p>
+            It is important to look at the knowledge as one complete whole and not as chapters and sections. Chapters/Sections or other categories may make it easy to remember, but the way to use it should be to draw from a one complete whole and <b>not expect that a question will be restricted to only a certain chapter or section.</b>
+          </p>
+          <p>
+            What a candidate needs to solve is a situation as opposed to a particular value or property. The candidate needs to look at the problem as a situation being presented. Various inputs are given about a situation and a certain missing information needs to be calculated using the concepts learnt in the subjects. Importantly, it is not restricted by subject, sometimes a mathematics problem may be created from a physics question or other way round. <b>Knowledge should be looked at as one complete whole and not as independent bits of information.</b>
+          </p>
+        {{/title.text}}
+      {{/card.title}}
+      {{#card.actions}}
+        <LinkTo @route="chaptersjee">{{#paper-button raised=true accent=true}}Chapters and Sections{{/paper-button}}</LinkTo>&nbsp;
+        <LinkTo @route="memory">{{#paper-button raised=true accent=true}}Memory{{/paper-button}}</LinkTo>
+      {{/card.actions}}
+    {{/paper-card}}
+  </div>
+  <div class="flex-20"></div>
+</div>
+
+
+{{outlet}}
