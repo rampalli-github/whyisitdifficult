@@ -1,6 +1,6 @@
 # whyisitdifficult
 
-This is a personal observation of the difficulty in attempting JEE (Advanced) question papers. Trying to explain the parameters involved in preparing for such an exam with examples. [Hosted here](https://rampalli-github.io/whyisitdifficult/)
+This is a personal observation of the difficulty in attempting JEE (Advanced) question papers. Trying to explain the parameters involved in preparing for such an exam with examples. [Hosted here](https://rampalli-github.github.io/whyisitdifficult/)
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
